@@ -1,0 +1,55 @@
+----------------------星展银行-----------------
+
+CNUTuat123
+log路径：/home/wasadm/IBM/webSphere/AppServer1/profiles/AppSrv01/logs/server1/log1.log
+
+java部署路径：/home/wasadm/IBM/WebSphere/AppServer1/profiles/AppSrv01/installedApps/A05sut01Node01Cell/dbs_war.ear/dbs.war
+
+java代码路径：/home/wasadm/IBM/WebSphere/AppServer1/profiles/AppSrv01/installedApps/A05sut01Node01Cell/dbs_war.ear/dbs.war/WEB-INF/classes/hs/stock/action/dbs/efna
+
+jsp路径：/home/wasadm/IBM/WebSphere/AppServer1/profiles/AppSrv01/installedApps/A05sut01Node01Cell/dbs_war.ear/dbs.war/dbs/efna
+
+C部署路径：/home/fssuat/lib
+
+菜单、报表表头、模板的配置路径：/home/wasadm/fssenv/xml/、Wasadm/fssenv/model
+
+css代码路径：/home/wasadm/IBM/WebSphere/AppServer1/profiles/AppSrv01/installedApps/A05sut01Node01Cell/dbs_war.ear/dbs.war/asset
+
+重启C++服务：/fssuat/sbin		先stopfss 再startfss
+重启Java后台服务：/home/wasadm/IBM/WebSphere/AppServer1/bin        先./stopServer.sh server1 后./startServer.sh server1
+重启Web环境：/home/wasadm/IBM/WebSphere/AppServer1/profiles/AppSrv01/bin    先./stopServer.sh server1   后./startServer.sh server1
+
+fssuat：传C语言之类用
+wasadmn：传Java语言之类用
+
+手动发送MQ报文：
+1、打开/home/fssuat/etc/interface.ini 找CVQNAME的值复制到Linux上
+2、fssuat用户：usr/mqm/samp/bin   ./amqsput + CVQNAME的值 进入报文
+3、复制报文内容，贴入Linux中执行
+
+中债登文件的更新程序，增加了合格投资者字段。
+程序路径：/home/fssuat/javabatch/DBSJar.jar
+生成文件脚本：/home/fssuat/javabatch/sbin/RiskFile.sh
+生成文件路径：/home/fssuat/bankfile/facta
+
+showver64 文件名  Kinux上查看文件版本
+
+只要有一个产品选否，就只能选P0产品（prd_type=0）
+
+cash_flow_flag:投资后是否有足够流动资金 0：是，1：否。
+
+persistent_flag 是否可持续产品  1：是
+dbs_prd_flag 是否本行产品
+
+buy_p2_flag  [K_EKHNL]
+
+0:否，年龄小于65周岁
+
+1:是，年龄大于或等于65周岁且小于70周岁
+
+2:是，年龄大于或等于70周岁且小于75周岁
+
+3:是，年龄大于或等于75周岁
+buy_ins_flag:是否可以购买投资及保险产品
+
+Mm12345678
